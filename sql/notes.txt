@@ -1,0 +1,3 @@
+SQL is done using SQL plus in the system itself.
+Oracle SQL is used here.
+Oracle1234 is the password used to connect to and from the databases.
