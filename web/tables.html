@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- this border attribute is used to create one border to the whole table 
+         its an attribute of 'table' -->
+
+        <!-- cell padding :it provides space btw content and the border.
+        cell spacing :it provides space btw 2 cells.These are attributes of 'table'  --> 
+
+        <!-- row span :its used to merge two or more rows.
+        col span :its used to merge two or more columns. 
+        its given to 'td'-->
+
+        <!-- height,width,bgcolor,align can be used anywhere in the table  -->
+
+    <table border="4" cellpadding="50" height="550" width="850" align="center+">
+       <tr align="center">
+        <th bgcolor="Aqua">Name</th>
+        <th bgcolor="Aqua">Class</th>
+        <th bgcolor="Aqua">Gender</th>
+       </tr>
+       <tr align="center">
+        <!-- rowspan performed here -->
+        <td bgcolor="Red" rowspan="2">Sarath</td>
+        <td bgcolor="Red">M24</td>
+        <td bgcolor="Red">M</td>
+       </tr>
+       <tr align="center">
+        <td bgcolor="Grenn">Shaheer</td>
+        <td bgcolor="Grenn">M24</td>
+        <!-- <td bgcolor="Grenn">M</td> -->
+       </tr>
+       <tr align="center">
+        <!-- colspan performed here  -->
+        <td bgcolor="Blue" colspan="2">Adarsh</td>
+        <td bgcolor="Blue">M24</td>
+        <!-- <td bgcolor="Blue">Unknown</td> -->
+       </tr>
+    </table>
+</body>
+</html>
+<!-- cell padding :it provides space btw content and the border.
+cell spacing :it provides space btw 2 cells. -->
