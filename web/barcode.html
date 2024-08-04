@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.min.js"
+      integrity="sha512-k2wo/BkbloaRU7gc/RkCekHr4IOVe10kYxJ/Q8dRPl7u3YshAQmg3WfZtIcseEk+nGBdK03fHBeLgXTxRmWCLQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <!-- JsBarcode is used inside canvas and script is used to give barcode -->
+    <canvas id="demo">
+        <script>
+            // #JsBarcode is used to provide barcode in html using script tag
+            // jsbarcode wont work 
+            JsBarcode("#demo","1234567890") 
+        </script>
+    </canvas>
+    
+    <canvas id="demo1">
+        <script>
+            // #JsBarcode should be written with different id each time processed.
+            JsBarcode("#demo1","Sarath") 
+        </script>
+    </canvas>
+
+  </body>
+</html>

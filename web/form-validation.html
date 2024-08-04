@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./form_new.html">
+    <!-- <form action="./form_new.html" method="post"> -->
+        <!-- "post" is used to provide security to the data entered  -->
+        <fieldset>
+          <legend>FORM VALIDATION</legend>
+  
+          <label for="name">Name: </label>
+          <input type="text" name="name" minlength="5" maxlength="10"><br />
+          <!-- name is used to provide particular name to the text which is shown alongside the link.. -->
+          <!-- minlength and maxlength is used to provide min and max length to text-->
+
+
+          <br /><label for="password">Password: </label>
+          <input type="password" name="password" required><br />
+          <!-- required used to display to fill out the field. -->
+  
+          <br /><label for="Tel">Tel: </label> 
+          <input type="tel" name="tel" size="10"><br />
+          <!-- size gives maximum length -->
+
+          <br /><label for="email">Email: </label>
+          <input type="email" value="kjsarath76@gmail.com" readonly><br />
+          <!-- value to give any value inside the field it beforehand -->
+  
+          <br /><input value="button" type="button" /><br />
+  
+          <br /><input value="Submit" type="submit" /><br />
+  
+          <br /><input type="reset" value="Reset" /><br />
+
+          <br /><label for="age">Age :</label> 
+          <input type="number" min="10" max="50" step="10"><br />
+          <!-- minimum and maximum no that can be entered -->
+          <!-- step is used to step that no of counts..10 20 30 40 50  -->
+
+          <br /><label for="languages">Languages: </label> <br />
+          <input type="checkbox" >Malayalam 
+          <input type="checkbox" disabled>English
+          <!-- we cant select when we use disabled..  -->
+          <input type="checkbox" checked/>Hindi <br />
+
+        </fieldset>
+      </form>
+</body>
+</html>
