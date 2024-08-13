@@ -1,0 +1,29 @@
+/* Descendent Selector */
+div p{
+    color:red
+}
+
+/* Child Selector */
+div>p{
+    color: blueviolet;
+}
+
+div>span>p{
+    color: aqua;
+} 
+
+/* Adjacent Selector */
+div+p{
+    color: yellow;
+}
+div+p+p{
+    color: green;
+}
+div+p+p+p{
+    color: blue;
+}
+
+/* General Selector */
+div~p{
+    background-color: aqua;
+}

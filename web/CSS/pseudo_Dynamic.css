@@ -1,0 +1,30 @@
+a:link{
+    color: yellow;
+}
+
+a:visited{
+    color: deeppink;
+}
+
+a:active{
+    color:darkgreen
+}
+
+input:focus{
+    background-color: black;
+    color: white;
+}
+
+[type=checkbox]:checked{
+    accent-color: green;
+    
+}
+
+[type=radio]:checked{
+    accent-color:deeppink;
+}
+
+p:hover{
+    background-color: aqua;
+    color: azure;
+}

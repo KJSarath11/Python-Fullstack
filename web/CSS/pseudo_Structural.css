@@ -1,0 +1,49 @@
+div>h1:first-child{
+    background-color: violet;
+    color: white;
+}
+
+div>h1:last-child{
+    background-color: indigo;
+    color: white;
+}
+
+div>h1:nth-child(4){
+    background-color: blue;
+    color: white;
+}
+
+div>h3:first-of-type{
+    background-color: green;
+    color: white;
+}
+
+div>p:last-of-type{
+    background-color: yellow;
+    color: white;
+}
+
+div>h4:first-of-type{
+    background-color: orange;
+    color: white;
+}
+
+div>h2:last-of-type{
+    background-color: red;
+    color: white;
+}
+
+div>h3:last-of-type{
+    background-color: red;
+    color: white;
+}
+
+div>h1:nth-child(odd){
+    background-color: deeppink;
+    color: white;
+}
+
+div>h2:nth-child(even){
+    background-color: black;
+    color: white;
+}

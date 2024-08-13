@@ -1,0 +1,28 @@
+/* tagname */
+h1{
+    color: aqua;
+    background-color: black;
+}
+
+/* demo selector */
+#demo{
+    color: black;
+    background-color: aqua;
+}
+/* class selector */
+.cls{
+    color: white;
+    background-color: black;
+}
+
+/* Grouping selector */
+p,h2,h4{
+    color: white;
+    background-color: green;
+}
+
+/* universal selector */
+*{
+    background-color: red;
+    
+}

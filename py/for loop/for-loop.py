@@ -49,3 +49,23 @@ for num in range(0,len(s)):
 s="hello"
 for index,each_character in enumerate(s):
     print(index,each_character)
+
+
+########################### ZIP ###############################
+#inbuilt/generic function which is used to iterate over multiple iterables simultaneously
+
+#iterating over mutlitiple string objects using zip class
+s1="hello"
+s2="world"
+
+for char1,char2 in zip(s1,s2):
+    print(char1,char2)
+
+#appending two lists
+a=[1,2,3,4,5]
+b=[3,4,5,6,7]
+add=[]
+
+for num1,num2 in zip(a,b):
+    add.append(num1+num2)
+print(add)
