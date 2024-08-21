@@ -1,5 +1,4 @@
-#########################################################################
-##### multiple decorators #####
+##### Multiple Decorators #####
 
 from time import sleep
 def delay(func):
