@@ -8,6 +8,17 @@ div>h1:last-child{
     color: white;
 }
 
+div>span>p{
+    color: aqua;
+}
+
+#para1{
+    color: palegreen;  
+    border:2px dotted;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
 div>h1:nth-child(4){
     background-color: blue;
     color: white;

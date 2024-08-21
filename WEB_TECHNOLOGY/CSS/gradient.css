@@ -1,0 +1,11 @@
+#demo{
+    
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    /* background: linear-gradient(to right ,red,green,orange,yellow); */
+    /* background: repeating-linear-gradient(red,green 40%,orange 20%); */
+    /* background: radial-gradient(violet,indigo,blue,green,yellow,orange,red); */
+    background: repeating-radial-gradient(violet,indigo 30%,blue 30%,green 60%,yellow 30%,orange 30%,red);
+
+}

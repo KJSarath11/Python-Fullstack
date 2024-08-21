@@ -1,0 +1,21 @@
+#para1{
+  color: red;  
+  border:2px dotted;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+
+#para2{
+    letter-spacing: 2px;
+}
+
+#para3{
+    word-spacing: 5px;
+    /* blur */
+    text-shadow: 2px 2px 2px red;
+}
+
+#para4{
+    text-shadow:-2px -3px;
+}
