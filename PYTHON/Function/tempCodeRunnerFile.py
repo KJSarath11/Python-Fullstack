@@ -1,8 +1,7 @@
-def add(*args):
-#     print(args)#just displaying what parameter we given
-#     total=0
-#     for num in args:
-#         total+=num
-#     return total
-
-# print(add(1,2,3,4))
+#type 4
+# def sum(a,b):
+#     return a+b
+# result=sum(1,2)
+# #loop and fucntion
+# for _ in range(0,5): # _ is a throw away keyword
+#     print(result)
