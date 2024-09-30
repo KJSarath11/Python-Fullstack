@@ -1,32 +1,46 @@
-class instagram:
-    def __init__(self,uname):
-        self.uname=uname
+# Base class: 
+class Animal:
+    def __init__(self, name):
+        self.name = name
 
-class Email(instagram):
-    def __init__(self, uname,email_id):
-        super().__init__(uname)
-        self.email_id=email_id
+    def move(self):
+        print(f"{self.name} moves")
 
-class Phone(instagram):
-    def __init__(self, uname,phno):
-        super().__init__(uname)
-        self.phno=phno
-    
-class instagram_v1(Email,Phone):
-    def __init__(self, uname, email_id,phno):
-        Email.__init__(uname, email_id)
-        Phone.__init__(uname, phno)
+# Derived class: Bird (adds wingspan attribute)
+class Bird(Animal):
+    def __init__(self, name, wingspan):
+        Animal.__init__(self, name)  # Call the base class constructor
+     #here we are calling animal.__init__ because its  multiple inheritance which is followed here
+        self.wingspan = wingspan
+   
+    def fly(self):
+        print(f"{self.name} can fly with a wingspan of {self.wingspan} meters")
 
-    def chat(self):
-        return "Enter the message"
+# Derived class: Fish (adds fins attribute)
+class Fish(Animal):
+    def __init__(self, name, fins):
+        Animal.__init__(self, name)  # Call the base class constructor
+    #here we are calling animal.__init__ because its  multiple inheritance which is followed here
+        self.fins = fins
 
-    def voice_call(self):
-        return f"Calling {self.phno} => {self.uname} => {self.email_id}"
+    def swim(self):
+        print(f"{self.name} can swim using {self.fins} fins")
 
-obj = instagram_v1("Sarath","kjsarath76@gmail.com","9496981270")
+# Derived class: FlyingFish (inherits from Bird and Fish)
+class FlyingFish(Bird, Fish):
+    def __init__(self, name, wingspan, fins):
+        Bird.__init__(self, name, wingspan)  # Initialize Bird part
+        Fish.__init__(self, name, fins)      # Initialize Fish part
+    #here we are calling bird.__init__ and fish.__init__ because its  multiple inheritance which is followed here
 
-# Testing the methods
-print(obj.phno)       # Phone number from whatsapp_v1
-print(obj.uname)
-print(obj.email_id)   # Username from whatsapp_v2
-print(obj.voice_call())
+    def special_ability(self):
+        print(f"{self.name} can fly and swim")
+
+# Create an object of FlyingFish class
+flying_fish = FlyingFish("Flying Fish", 1.5, 2)
+
+# Call methods from different classes
+flying_fish.move()           # Inherited from Animal class
+flying_fish.fly()            # Inherited from Bird class
+flying_fish.swim()           # Inherited from Fish class
+flying_fish.special_ability()  # Defined in FlyingFish class

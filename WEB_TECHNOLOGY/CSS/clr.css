@@ -1,0 +1,24 @@
+#id1{
+    color:brown;
+}
+
+#id2{
+    color:#1f0342;
+}
+
+#id3{
+    color:rgb(62, 56, 231);
+}
+
+#id4{
+    color:rgba(37, 244, 23, 0.5);
+}
+
+#id5{
+    color:hsl(15, 94%, 53%);
+}
+
+#id6{
+    color:rgb(250, 6, 6);
+}
+

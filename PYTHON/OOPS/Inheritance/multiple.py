@@ -1,29 +1,33 @@
-# Parent class 1
-class whatsapp_v1:
-    def __init__(self, phno):
-        self.phno = phno
+# Base class: Animal
+class Animal:
+    def __init__(self, name):
+        self.name = name
 
-# Parent class 2
-class whatsapp_v2:
-    def __init__(self, username):
-        self.username = username
+    def move(self):
+        print(f"{self.name} moves")
 
-# Child class inheriting from both whatsapp_v1 and whatsapp_v2
-class application(whatsapp_v1, whatsapp_v2):
-    def __init__(self, phno, username):
-        whatsapp_v1.__init__(self, phno)  # Initializing whatsapp_v1
-        whatsapp_v2.__init__(self, username)  # Initializing whatsapp_v2
+# Base class: Flyer
+class Flyer:
+    def __init__(self, wingspan):
+        self.wingspan = wingspan
 
-    def chat(self):
-        return "Enter the message"
+    def fly(self):
+        print(f"Flying with a wingspan of {self.wingspan} meters")
 
-    def voice_call(self):
-        return f"Calling {self.phno} => {self.username}"
+# Derived class: FlyingFish (inherits from both Animal and Flyer)
+class FlyingFish(Animal, Flyer):
+    def __init__(self, name, wingspan, fins):
+        Animal.__init__(self, name)  # Initialize Animal part
+        Flyer.__init__(self, wingspan)  # Initialize Flyer part
+        self.fins = fins
 
-# Creating object of application class
-obj = application(9496981270, "Sarath")
+    def swim(self):
+        print(f"{self.name} can swim using {self.fins} fins")
 
-# Testing the methods
-print(obj.phno)       # Phone number from whatsapp_v1
-print(obj.username)   # Username from whatsapp_v2
-print(obj.voice_call())  # Using voice_call method
+# Create an object of FlyingFish class
+flying_fish = FlyingFish("Flying Fish", 1.5, 2)
+
+# Call methods from different classes
+flying_fish.move()        # Inherited from Animal class
+flying_fish.fly()         # Inherited from Flyer class
+flying_fish.swim()        # Defined in FlyingFish class

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Strings-collection or bunch of characters.enclose within " ".
+        // methods:-
+        // length concat replace slice touppercase tolowercase
+        // indexof lastindexof trimstart trimend
+        // repeat match padstart padend
+        // charat charcodeat
+
+        //1.length
+        let str="   Sarath K J is my name not Sarath Garuuu/bramand   "
+        console.log(str.length)
+        // 2.Concat
+        console.log(str.concat("/Abraham"))
+        // 3.Replace
+        console.log(str.replace("name","NAME"))
+        // 4.Slice
+        console.log(str.slice(0,10))
+        // 5.touppercase
+        console.log(str.toUpperCase())
+        // 6.tolowercase
+        console.log(str.toLowerCase())
+        // 7.indexof
+        console.log(str.indexOf("a"))
+        // 8.lastindexof
+        console.log(str.lastIndexOf("a"))
+        // 9.trimstart
+        console.log(str.trimStart())
+        // space from start is trimmed of
+        // 10.trimend
+        console.log(str.trimEnd())
+        // space from end is trimmed of
+        // 11.repeat
+        console.log(str.repeat(2))
+        // 12.match
+        console.log(str.match("a"))
+        // return type list
+        // char present-list with char,index,and string itself
+        // else null
+        // 13.padStart
+        let c="box"
+        console.log(c.padStart(10,"a"))
+        // '10' will be the total length of 'c' so 'box' will be prefixed with 'a'
+        // 
+        // 14.padEnd
+        console.log(c.padEnd(10,"a"))
+        //similar to padStart
+        // 15.chartat
+        console.log(str.charAt(5))
+        // 16.charcodeat
+        console.log(str.charCodeAt(5))
+        // 17.match
+        console.log(str.includes("a"))
+        console.log(str.includes("z"))
+        // return true if char present else false
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

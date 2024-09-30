@@ -1,24 +1,49 @@
-# Parent class
-class Instagram:
-    def __init__(self, uname):
-        self.uname = uname
+# Base class: Animal
+class Animal:
+    def __init__(self, name):
+        self.name = name
 
-# Child class 1 inheriting from Instagram
-class Email(Instagram):
-    def __init__(self, uname, email_id):
-        super().__init__(uname)  # Calling parent class constructor
-        self.email_id = email_id
+    def move(self):
+        print(f"{self.name} moves")
 
-# Child class 2 inheriting from Instagram
-class Phone(Instagram):
-    def __init__(self, uname, phone_no):
-        super().__init__(uname)  # Calling parent class constructor
-        self.phone_no = phone_no
+# Derived class: Bird
+class Bird(Animal):
+    def __init__(self, name, wingspan):
+        super().__init__(name)  # Call the base class constructor
+        self.wingspan = wingspan
 
-# Creating objects of the child classes
-obj1 = Email("skj", "skj@example.com")
-obj2 = Phone("skj", 9496981270)
+    def fly(self):
+        print(f"{self.name} can fly with a wingspan of {self.wingspan} meters")
 
-# Displaying the attributes
-print(f"Username: {obj1.uname}, Email ID: {obj1.email_id}")
-print(f"Username: {obj2.uname}, Phone No: {obj2.phone_no}")
+# Derived class: Fish
+class Fish(Animal):
+    def __init__(self, name, fins):
+        super().__init__(name)  # Call the base class constructor
+        self.fins = fins
+
+    def swim(self):
+        print(f"{self.name} can swim using {self.fins} fins")
+
+# Derived class: Reptile
+class Reptile(Animal):
+    def __init__(self, name, scale_color):
+        super().__init__(name)  # Call the base class constructor
+        self.scale_color = scale_color
+
+    def crawl(self):
+        print(f"{self.name} crawls and has {self.scale_color} scales.")
+
+# Create objects of derived classes
+sparrow = Bird("Sparrow", 0.25)
+goldfish = Fish("Goldfish", 5)
+lizard = Reptile("Lizard", "green")
+
+# Call methods from different classes
+sparrow.move()       # Inherited from Animal class
+sparrow.fly()        # Bird method
+
+goldfish.move()      # Inherited from Animal class
+goldfish.swim()      # Fish method
+
+lizard.move()        # Inherited from Animal class
+lizard.crawl()       # Reptile method

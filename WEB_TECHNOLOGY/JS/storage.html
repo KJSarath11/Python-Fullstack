@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn1">Click here for local storage</button>
+    <button id="btn2">click here for session storage</button>
+    <button id="btn3">click here for the object</button>
+
+    <script>
+        let btn1=document.getElementById("btn1")
+        btn1.addEventListener("click",()=>{
+        // Local Storage-the data is not lost even after the page is closed
+            // sending item to local storage in the form of (key,value) pair
+                localStorage.setItem("name","sarath")
+                localStorage.setItem("food","biriyani")
+            
+            // fetching item from local storage
+                localStorage.getItem("name")
+                localStorage.getItem("food")
+
+            // deleting item from local storage
+                localStorage.removeItem("name")
+        })
+
+        let btn2=document.getElementById("btn2")
+        btn2.addEventListener("click",()=>{
+        // Session storage-data is lost the moment the page is closed
+                // sessionStorage.setItem("name","KJ")
+                sessionStorage.setItem("place","ashtamichira")
+                // sessionStorage.getItem("name")
+                sessionStorage.getItem("place")
+                // sessionStorage.removeItem("name")
+        })
+    </script>
+</body>
+</html>
