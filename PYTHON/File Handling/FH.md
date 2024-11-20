@@ -4,7 +4,7 @@
 - 4 modes to read:-
     1.r (read)- used to take the content from file.
     2.w (write)- used to write in a file.
-    3.x (xmode)- used to write in a file but wont overwrite over another file.
+    3.x (xmode)- used to write in a file but wont overwrite over another file.Exclusive Creation Mode 'x': This mode is used to create a new file, but it raises a FileExistsError if the file already exists
     4.a (append)-used to write in the same file itself rather than overwriting.
 - open(file,mode) :-
     -inbuilt or generic fucntion.
@@ -25,3 +25,4 @@
 - wherever you have '\' instead give '/' or '\\'
 - .close() to close
 - .closed() to check if its closed
+- os.remove() and os.unlink() to remove a file
