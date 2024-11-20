@@ -1,5 +1,5 @@
 def armstrong(n:int)->bool:
-    num_digits=len(str(n))
+    num_digits=len(str(n))#3
     sum_of_power=0
     temp=n
 

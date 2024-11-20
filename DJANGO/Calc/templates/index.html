@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="POST">
+      <!-- we cant create  -->
+      {% csrf_token %}
+      <!-- Cross Site Request Forgery-to hide the details and prevent malicious attacks.CSRF is an attack where a malicious website tricks a user (who is already authenticated) into executing unwanted actions on another site (e.g., submitting a form, performing a payment).-->
+      <label>Enter 1st num:</label>
+      <input type="number" name="first" /><br /><br />
+      <label>Enter 2nd num:</label>
+      <input type="number" name="second" /><br /><br />
+      <button type="submit" name="add">Add</button>
+      <button type="submit" name="sub">Sub</button>
+      <button type="submit" name="mul">Mul</button>
+      <button type="submit" name="div">Div</button>
+      <button type="submit" name="exp">Exp</button>
+    </form>
+  </body>
+</html>

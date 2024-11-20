@@ -1,0 +1,16 @@
+h1{
+    color: white;
+    background-color: black;
+}
+h2{
+    color: red;
+    background-color: yellow;
+}
+h3{
+    color: yellow;
+    background-color: red;
+}
+div{
+    background-color: aqua;
+    /* entire div acts and parent */
+}

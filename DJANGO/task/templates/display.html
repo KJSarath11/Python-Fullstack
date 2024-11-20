@@ -1,0 +1,9 @@
+{%include "overlap.html"%}
+{%block content%}
+<div class="container text-center position-absolute top-50 start-50 translate-middle">
+    <h1>Student Added!</h1>
+    <p>{{ name }} was registered to {{ course }}.</p>
+    <a href="{% url 'index' %}" class="btn btn-primary">Add Another Student</a>
+    <a href="{% url 'view_all' %}" class="btn btn-secondary">View All Students</a>
+</div>
+{%endblock%}

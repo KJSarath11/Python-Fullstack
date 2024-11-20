@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Images and Videos</title>
+    <style>
+      /* Center the container on the page */
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Full viewport height */
+      }
+
+      /* Styling the student card div */
+      .card {
+        width: 600px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      /* Ensure consistent size for images and videos */
+      img,
+      video {
+        width: 100%; /* Full width of the container */
+        height: 300px; /* Same height for both image and video */
+        object-fit: cover; /* Maintain aspect ratio */
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      #name {
+        text-transform:capitalize;
+        font-size: 20vh;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      {% for i in display %}
+      <div id="name">{{ i.name }}</div>
+
+      <img src="{{ i.image.url }}" />
+
+      <video src="{{ i.video.url }}" controls></video>
+      <hr style="font-size: 10vh;">
+      {% endfor %}
+    </div>
+
+  </body>
+</html>

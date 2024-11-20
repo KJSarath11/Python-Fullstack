@@ -1,0 +1,29 @@
+{%include 'overlap.html'%}
+{%block content%}
+<div class="container position-absolute top-50 start-50 translate-middle">
+    <h1 class="text-center">All Registered Students</h1>
+    <table class="table table-bordered text-center ">
+        <thead class="table-dark">
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in students %}
+                <tr>
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.course }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="2">No students registered yet.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="text-start">
+        <a href="{% url 'index' %}" class="btn btn-primary">Add New Student</a>
+    </div>
+</div>
+{%endblock%}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="POST">
+      {% csrf_token %}
+      <h1>HELLO!!!</h1>
+      NAME:
+      <input type="text" name="NAME" id="" value="{{student.name}}" /> AGE:
+      <input type="text" name="AGE" id="" value="{{student.age}}" /> PH:
+      <input type="text" name="PH" id="" value="{{student.phno}}" />
+      <button type="submit">UPDATE</button>
+    </form>
+  </body>
+</html>
