@@ -125,67 +125,191 @@
 
 // export default App;
 
-// Uncontrolled Forms
+//? Uncontrolled Forms
+// import React, { useState } from "react";
+
+// const App = () => {
+//   let [n1, setn1] = useState();
+//   let [n2, setn2] = useState();
+//   let [res, setres] = useState();
+
+//   let n1data = (e) => {
+//     setn1(e.target.value);
+//   };
+//   let n2data = (e) => {
+//     setn2(e.target.value);
+//   };
+
+//   let add = (e) => {
+//     e.preventDefault();
+//     let a = n1;
+//     let b = n2;
+//     setres(parseInt(a) + parseInt(b));
+//   };
+//   let sub = (e) => {
+//     e.preventDefault();
+//     let a = n1;
+//     let b = n2;
+//     setres(parseInt(a) - parseInt(b));
+//   };
+//   let mul = (e) => {
+//     e.preventDefault();
+//     let a = n1;
+//     let b = n2;
+//     setres(parseInt(a) * parseInt(b));
+//   };
+//   let div = (e) => {
+//     e.preventDefault();
+//     let a = n1;
+//     let b = n2;
+//     setres(parseInt(a) / parseInt(b));
+//   };
+//   return (
+//     <div>
+//       <h1>Uncontrolled Forms: </h1>
+//       <form action="">
+//         <label htmlFor="">N1:</label>
+//         <input type="text" value={n1} onChange={n1data} />
+//         <br />
+//         <br />
+//         <label htmlFor="">N2:</label>
+//         <input type="text" value={n2} onChange={n2data} />
+//         <br />
+//         <br />
+//         <button onClick={add}>Add</button>
+//         &nbsp;
+//         <button onClick={sub}>SUB</button>
+//         &nbsp;
+//         <button onClick={mul}>MUL</button>
+//         &nbsp;
+//         <button onClick={div}>DIV</button>
+//         &nbsp;
+//       </form>
+//       <h1>Result is: {res}</h1>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+// ? Background colour change using radio
+// import React from "react";
+
+// const App = () => {
+//   let Light = () => {
+//     document.body.style.backgroundColor = "White";
+//     document.body.style.color = "Black";
+//   };
+//   let Dark = () => {
+//     document.body.style.backgroundColor = "Black";
+//     document.body.style.color = "White";
+//   };
+//   return (
+//     <div>
+//       <label htmlFor="">Light: </label>
+//       <input type="radio" name="Light" id="" onClick={Light} />
+//       &nbsp;
+//       &nbsp;
+//       <label htmlFor="">Dark:</label>
+//       <input type="radio" name="Dark" id="" onClick={Dark} />
+//       <ul type="None">
+//       <h1>HELLLOOO !!!!!</h1>
+//         <li>Name: Sarath</li>
+//         <li>Age: 22</li>
+//         <li>Place: Ashtamichira</li>
+//       </ul>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+//? Printing inside the console
+// import React, { useRef } from "react";
+
+// const App = () => {
+//   let name = useRef();
+//   let age = useRef();
+//   let city = useRef();
+//   let phn = useRef();
+
+//   let formhandle = (e) => {
+//     e.preventDefault();
+//     let a = name.current.value;
+//     let b = age.current.value;
+//     let c = city.current.value;
+//     let d = phn.current.value;
+//     console.log({name:a, age:b, city:c, phn:d})
+//   };
+//   return (
+//     <div>
+//       <form action="" >
+//         <label htmlFor="">Name:</label>
+//         <input type="text" ref={name} />
+//         <br />
+//         <br />
+//         <label htmlFor="">Age:</label>
+//         <input type="text" ref={age} />
+//         <br />
+//         <br />
+//         <label htmlFor="">City:</label>
+//         <input type="text" ref={city} />
+//         <br />
+//         <br />
+//         <label htmlFor="">Phn no:</label>
+//         <input type="text" ref={phn} />
+//         <br />
+//         <br />
+//         <button type="submit" onClick={formhandle}>Click Me</button>
+//       </form>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+// ?
 import React, { useState } from "react";
 
 const App = () => {
-  let [n1, setn1] = useState();
-  let [n2, setn2] = useState();
-  let [res, setres] = useState();
+  let [name, setname] = useState();
+  let [age, setage] = useState();
+  let [sal, setsal] = useState();
 
-  let n1data = (e) => {
-    setn1(e.target.value);
+  let namedata = (e) => {
+    setname(e.target.value);
   };
-  let n2data = (e) => {
-    setn2(e.target.value);
+  let agedata = (e) => {
+    setage(e.target.value);
+  };
+  let saldata = (e) => {
+    setsal(e.target.value);
   };
 
-  let add = (e) => {
+  let formhandle = (e) => {
     e.preventDefault();
-    let a = n1;
-    let b = n2;
-    setres(parseInt(a) + parseInt(b));
-  };
-  let sub = (e) => {
-    e.preventDefault();
-    let a = n1;
-    let b = n2;
-    setres(parseInt(a) - parseInt(b));
-  };
-  let mul = (e) => {
-    e.preventDefault();
-    let a = n1;
-    let b = n2;
-    setres(parseInt(a) * parseInt(b));
-  };
-  let div = (e) => {
-    e.preventDefault();
-    let a = n1;
-    let b = n2;
-    setres(parseInt(a) / parseInt(b));
+    console.log({ Name: name, Age: age, salary: sal });
   };
   return (
     <div>
-      <h1>Uncontrolled Forms: </h1>
-      <form action="">
-        <label htmlFor="">N1:</label>
-        <input type="text" value={n1} onChange={n1data} />
+      <form action="" >
+        <label htmlFor="">Name:</label>
+        <input type="text" value={name} onChange={namedata} />
         <br />
         <br />
-        <label htmlFor="">N2:</label>
-        <input type="text" value={n2} onChange={n2data} />
+        <label htmlFor="">Age:</label>
+        <input type="number" value={age} onChange={agedata} />
         <br />
         <br />
-        <button onClick={add}>Add</button>
-        &nbsp;
-        <button onClick={sub}>SUB</button>
-        &nbsp;
-        <button onClick={mul}>MUL</button>
-        &nbsp;
-        <button onClick={div}>DIV</button>
-        &nbsp;
+        <label htmlFor="">Salary:</label>
+        <input type="number" value={sal} onChange={saldata} />
+        <br />
+        <br />
+        <button onClick={formhandle}>Click</button>
       </form>
-      <h1>Result is: {res}</h1>
+      <h1>{name}</h1>
+      <h1>{age}</h1>
+      <h1>{sal}</h1>
     </div>
   );
 };
