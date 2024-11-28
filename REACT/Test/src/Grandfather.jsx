@@ -4,7 +4,7 @@ import Father from "./Father";
 const Grandfather = () => {
   return (
     <div>
-      <Father props1="money"/>
+      <Father props1="Sarath"/>
     </div>
   );
 };
