@@ -268,50 +268,52 @@
 
 // export default App;
 
-// ?
-import React, { useState } from "react";
+// ?Printing inside console as well as UI
+// import React, { useState } from "react";
 
-const App = () => {
-  let [name, setname] = useState();
-  let [age, setage] = useState();
-  let [sal, setsal] = useState();
+// const App = () => {
+//   let [name, setname] = useState();
+//   let [age, setage] = useState();
+//   let [sal, setsal] = useState();
 
-  let namedata = (e) => {
-    setname(e.target.value);
-  };
-  let agedata = (e) => {
-    setage(e.target.value);
-  };
-  let saldata = (e) => {
-    setsal(e.target.value);
-  };
+//   let namedata = (e) => {
+//     setname(e.target.value);
+//   };
+//   let agedata = (e) => {
+//     setage(e.target.value);
+//   };
+//   let saldata = (e) => {
+//     setsal(e.target.value);
+//   };
 
-  let formhandle = (e) => {
-    e.preventDefault();
-    console.log({ Name: name, Age: age, salary: sal });
-  };
-  return (
-    <div>
-      <form action="" >
-        <label htmlFor="">Name:</label>
-        <input type="text" value={name} onChange={namedata} />
-        <br />
-        <br />
-        <label htmlFor="">Age:</label>
-        <input type="number" value={age} onChange={agedata} />
-        <br />
-        <br />
-        <label htmlFor="">Salary:</label>
-        <input type="number" value={sal} onChange={saldata} />
-        <br />
-        <br />
-        <button onClick={formhandle}>Click</button>
-      </form>
-      <h1>{name}</h1>
-      <h1>{age}</h1>
-      <h1>{sal}</h1>
-    </div>
-  );
-};
+//   let formhandle = (e) => {
+//     e.preventDefault();
+//     console.log({ Name: name, Age: age, salary: sal });
+//   };
+//   return (
+//     <div>
+//       <form action="" >
+//         <label htmlFor="">Name:</label>
+//         <input type="text" value={name} onChange={namedata} />
+//         <br />
+//         <br />
+//         <label htmlFor="">Age:</label>
+//         <input type="number" value={age} onChange={agedata} />
+//         <br />
+//         <br />
+//         <label htmlFor="">Salary:</label>
+//         <input type="number" value={sal} onChange={saldata} />
+//         <br />
+//         <br />
+//         <button onClick={formhandle}>Click</button>
+//       </form>
+//       <h1>{name}</h1>
+//       <h1>{age}</h1>
+//       <h1>{sal}</h1>
+//     </div>
+//   );
+// };
 
-export default App;
+// export default App;
+
+

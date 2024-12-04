@@ -1,0 +1,34 @@
+[
+    {
+        "name":"Parbathi S",
+        "age":22,
+        "city":"Ernakulam",
+        "country":"India"
+
+    },
+    {
+        "name":"Roopesh ",
+        "age":25,
+        "city":"Kollam",
+        "country":"India"
+    },
+    {
+        "name":"Sarath",
+        "age":22,
+        "city":"Thrissur",
+        "country":"India"
+
+    },
+    {
+        "name":"Vinaya",
+        "age":22,
+        "city":"BOMB",
+        "country":"India"
+    },
+    {
+        "name":"Megha",
+        "age":50,
+        "city":"Kozhikode",
+        "country":"India"
+    }
+]
